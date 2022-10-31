@@ -1,9 +1,9 @@
 # Module 3 Challenge_Password Generator
 
 ## Contents
-1. [Project Description](#project description)
-2. [Acceptance Criteria](#acceptance criteria)
-3. [Password Generator Webpage](#password generator webpage)
+1. [Project Description](#project-description)
+2. [Acceptance Criteria](#acceptance-criteria)
+3. [Password Generator Webpage](#password-generator-webpage)
 
 ## Project Description
 To create an application that an employee can use to generate a random password based on criteria they've selected. 
