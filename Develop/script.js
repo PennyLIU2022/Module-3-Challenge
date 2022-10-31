@@ -17,6 +17,7 @@ var uppercase = confirm("Do you want to have uppercase letters in your password?
 var number = confirm("Do you want to have numbers in your password?");
 var special = confirm("Do you want to have special characters in your password?");
 
+
 // Function for password values
 function optionsCharset() {
   var charset = "";
@@ -48,11 +49,17 @@ function generatePassword(){
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
+  if (lowercase == true ||
+    uppercase == true ||
+    number == true ||
+    special == true
+  ) {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+    passwordText.value = password;
+  } else {
+    alert("None of character types is selected, please select at least one.")
+  }
 }
 
 // Add event listener to generate button
