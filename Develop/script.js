@@ -37,8 +37,6 @@ function generatePassword(){
   return psw;
 }
 
-//variables for options
-
 
 // Function for password values based on chosen options
 function optionsCharset() {
@@ -50,6 +48,7 @@ function optionsCharset() {
     return false;
   }
 
+  //variables for options
   var lowercase = confirm ("Do you want to have lowercase letters in your password?");
   var uppercase = confirm("Do you want to have uppercase letters in your password?");
   var number = confirm("Do you want to have numbers in your password?");
